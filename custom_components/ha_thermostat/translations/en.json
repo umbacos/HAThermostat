@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HA Thermostat",
+        "description": "Configure your smart thermostat. Select the boiler switch and temperature sensor.",
+        "data": {
+          "name": "Integration name",
+          "boiler_entity_id": "Boiler switch entity",
+          "sensor_entity_id": "Temperature sensor entity",
+          "comfort_temp": "Comfort temperature (°C)",
+          "eco_temp": "Eco temperature (°C)"
+        }
+      }
+    },
+    "error": {
+      "invalid_temp": "Eco temperature must be lower than comfort temperature",
+      "entity_not_found": "Selected entity not found",
+      "base": "invalid_temp"
+    },
+    "abort": {
+      "already_configured": "HA Thermostat is already configured"
+    }
+  }
+}

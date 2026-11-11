@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HA Termostato",
+        "description": "Configura il tuo termostato intelligente. Seleziona lo switch della caldaia e il sensore di temperatura.",
+        "data": {
+          "name": "Nome integrazione",
+          "boiler_entity_id": "Switch caldaia",
+          "sensor_entity_id": "Sensore temperatura",
+          "comfort_temp": "Temperatura comfort (°C)",
+          "eco_temp": "Temperatura eco (°C)"
+        }
+      }
+    },
+    "error": {
+      "invalid_temp": "La temperatura eco deve essere inferiore alla temperatura comfort",
+      "entity_not_found": "Entità selezionata non trovata",
+      "base": "invalid_temp"
+    },
+    "abort": {
+      "already_configured": "HA Termostato è già configurato"
+    }
+  }
+}

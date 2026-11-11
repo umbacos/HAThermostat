@@ -1,0 +1,24 @@
+set_manual_mode:
+  name: Set Manual Mode
+  description: Switch to manual mode with a target temperature and optional end time.
+  fields:
+    temperature:
+      name: Temperature
+      description: Target temperature in Celsius
+      required: true
+      selector:
+        number:
+          min: 5
+          max: 30
+          step: 0.5
+          unit_of_measurement: "°C"
+    end_datetime:
+      name: End date/time
+      description: Optional ISO datetime when manual mode ends and schedule resumes
+      required: false
+      selector:
+        datetime:
+
+set_schedule_mode:
+  name: Set Schedule Mode
+  description: Switch back to weekly schedule mode.
